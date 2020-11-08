@@ -1,0 +1,11 @@
+.content {
+    width: 1000px;
+}
+
+.content__paragraph {
+    text-align: left;
+}
+
+.content__list > li {
+    text-align: left;
+}
