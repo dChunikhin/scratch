@@ -7,8 +7,6 @@ const Content = ({ isArtist }) => {
             <Switch>
                 <Redirect exact from={'/'} to={'/profile'} />
                 <Route path={'/profile'}>
-                    <br/>
-                    <br/>
                     { isArtist ? (
                         <ul className={'content__list'}>
                             <li>Аватарка</li>
@@ -34,10 +32,7 @@ const Content = ({ isArtist }) => {
                         </p>
                     ) }
                 </Route>
-
                 <Route path={'/my-songs'}>
-                    <br/>
-                    <br/>
                     Добавленный контент:
                     <ul className={'content__list'}>
                         <li>сколько человек и как оценили</li>
@@ -69,8 +64,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path={'/subscribers'}>
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Если у артиста куплен премиум аккаунт, он может добавить запись в ленту для всех своих подписчиков (прикрепить ссылку, фото)
                         + видеть аналитику по подписчикам:
                     </p>
@@ -89,8 +82,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path={'/donate'}>
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Если у артиста куплен премиум аккаунт, он может выставить минимальную сумму донатов.
                         Логика донатов такая: на странице артиста есть кнопка “Write message & donate”,
                         пользователи могут написать сообщение и выбрать сумму доната артисту в Токенах.
@@ -100,11 +91,8 @@ const Content = ({ isArtist }) => {
                         Донат будет показан в ленте событий пользователя + ответ на него.
                     </p>
                 </Route>
-
                 <Route path="/listen">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Стартовый раздел пользователя, доступный только в <b>мобильном приложении</b>.
                         <br/>
                         <br/>
@@ -132,8 +120,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path="/songs">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Список оцененного контента (лайк-дизлайк) с возможностью просмотра того же самого плеера,
                         что и при оценке (все функции как и при оценке, за исключением оценки лайк-дизлайк)
                         Список песен Избранное
@@ -143,8 +129,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path="/artists">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Список артистов, который можно сортировать по количеству подписчиков, по дате регистрации, по жанрам музыки,
                         осуществлять поиск по псевдониму.
                         <br/>
@@ -154,8 +138,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path="/subscriptions">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Список подписок пользователя в виде ленты обновлений
                         (добавлен контент для оценки + добавлено какое то уведомление от артиста) артистов на которых он подписан
                         + список текущих подписок в виде списка артистов.
@@ -163,8 +145,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path="/promo">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Различные акции среди пользователей, например:
                         <br/>
                         <br/>
@@ -181,8 +161,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path="/tokens">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Список рефералов, которые зарегистрировались по реферальной ссылке и приносят доход (артисты и пользователи)
                         + реферальная ссылка для привлечения
                         <br/>
@@ -193,8 +171,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path="/settings">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Настройки аккаунта – пароль, язык, социальные сети, аватар и т.д.
                         <br/>
                         <br/>
@@ -204,8 +180,6 @@ const Content = ({ isArtist }) => {
 
                 <Route path="/concept">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Платформа представляет собой экосистему, в которой участвуют артисты и любители музыки (пользователи),
                         с целью анализа и продвижения музыкальных треков и генерации+распределения Токенов (внутренней криптовалюты)
                         за каждое полезное действие.
@@ -229,8 +203,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path="/economic">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Артисты пополняют свой аккаунт в EUR для оплаты услуг аналитики и промоушена.
                         Система вычитает определенный % комиссии, вся остальная сумма конвертируется в Токены из расчета 1 Токен = 1 EUR.
                         Эти Токены (за предыдущим вычетом комиссии) сплитятся между пользователями,
@@ -256,8 +228,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path="/analytic">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         Каждая песня проходит определенные этапы распространения и оценки среди пользователей.
                     </p>
                     <ul className={'content__list'}>
@@ -291,8 +261,6 @@ const Content = ({ isArtist }) => {
                 </Route>
                 <Route path="/registration">
                     <p className={'content__paragraph'}>
-                        <br/>
-                        <br/>
                         В процессе регистрации можно выбрать один из двух типов аккаунтов: артист или пользователь.
                         Указывается номер телефона (на который приходит SMS с кодом подтверждения в конце регистрации), номер используется как логин.
                     </p>
